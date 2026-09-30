@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cadastro | ONG Esperança</title>
+<meta name="description" content="Cadastre-se como voluntário ou membro da ONG Esperança.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header class="site"><div class="container bar">
+<a class="logo" href="index.html"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="9" fill="#f4b32a"/><path d="M20 3v6M20 31v6M3 20h6M31 20h6M8 8l4 4M28 28l4 4M32 8l-4 4M12 28l-4 4" stroke="#1f7fc1" stroke-width="3" stroke-linecap="round"/></svg>ONG Esperança</a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu"><span></span></button>
+<nav class="nav" id="nav" aria-label="Principal"><ul>
+<li><a href="index.html">Início</a></li>
+<li><a href="projetos.html">Projetos</a></li>
+<li><a href="doacoes.html">Doações</a></li>
+<li class="has-drop"><button class="drop-btn" type="button" aria-expanded="false" aria-haspopup="true">Participe</button>
+<ul class="drop"><li><a href="cadastro.html" aria-current="page">Seja voluntário</a></li><li><a href="doacoes.html#itens">Doe alimentos e itens</a></li><li><a href="#contato">Fale conosco</a></li></ul></li>
+<li><a class="nav-doar" href="doacoes.html">Doe agora</a></li>
+</ul></nav></div></header>
+<main id="conteudo">
+<section class="pagina-topo"><div class="container"><h1>Cadastro de voluntários e membros</h1><p>Preencha seus dados para fazer parte da ONG Esperança. Os campos ficam verdes quando estão corretos e vermelhos quando precisam de ajuste.</p></div></section>
+<section class="secao"><div class="container duas">
+<div><img src="images/Gemini_Generated_Image_xsq2rhxsq2rhxsq2.jpg" style="border-radius:var(--raio);margin-bottom:1.5rem" alt="Voluntários e crianças reunidos na comunidade atendida pela ONG" loading="lazy"><h3>Para participar</h3><p>Voluntários precisam ter 16 anos ou mais. Depois do cadastro, a equipe entra em contato por e-mail para combinar a primeira atividade.</p></div>
+<div class="painel">
+<form id="form-cadastro" novalidate>
+<div id="alerta-form" class="alert" role="alert" hidden></div>
+<div class="campo"><label for="nome">Nome completo</label><input id="nome" name="nome" type="text" autocomplete="name" aria-describedby="msg-nome" required><small class="msg" id="msg-nome"></small></div>
+<div class="campo"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" aria-describedby="msg-email" required><small class="msg" id="msg-email"></small></div>
+<div class="campo"><label for="cpf">CPF</label><input id="cpf" name="cpf" type="text" inputmode="numeric" placeholder="000.000.000-00" maxlength="14" aria-describedby="msg-cpf" required><small class="msg" id="msg-cpf"></small></div>
+<div class="linha">
+<div class="campo"><label for="nascimento">Data de nascimento</label><input id="nascimento" name="nascimento" type="date" aria-describedby="msg-nascimento" required><small class="msg" id="msg-nascimento"></small></div>
+<div class="campo"><label for="idade">Idade</label><input id="idade" name="idade" type="text" inputmode="numeric" maxlength="3" aria-describedby="msg-idade" required><small class="msg" id="msg-idade"></small></div>
+</div>
+<div class="linha">
+<div class="campo"><label for="cep">CEP</label><input id="cep" name="cep" type="text" inputmode="numeric" placeholder="00000-000" maxlength="9" autocomplete="postal-code" aria-describedby="msg-cep" required><small class="msg" id="msg-cep"></small></div>
+<div class="campo"><label for="numero">Número</label><input id="numero" name="numero" type="text" placeholder="Ex.: 120" maxlength="6" aria-describedby="msg-numero" required><small class="msg" id="msg-numero"></small></div>
+</div>
+<p class="dica" id="info-endereco" aria-live="polite"></p>
+<button class="btn btn-primario" type="submit">Enviar cadastro</button>
+</form>
+</div>
+</div></section>
+</main>
+<footer class="rodape" id="contato"><div class="container">
+<div class="rodape-grade">
+<div><h3>ONG Esperança</h3><p>Alimento, educação e cuidado para famílias que vivem em comunidades urbanas. Nossa comunidade, nosso futuro.</p></div>
+<div><h3>Navegação</h3><ul><li><a href="index.html">Início</a></li><li><a href="projetos.html">Projetos</a></li><li><a href="doacoes.html">Doações</a></li><li><a href="cadastro.html">Cadastro</a></li></ul></div>
+<div><h3>Como ajudar</h3><ul><li><a href="doacoes.html">Doação em dinheiro</a></li><li><a href="doacoes.html#itens">Doação de itens</a></li><li><a href="cadastro.html">Voluntariado</a></li></ul></div>
+<div><h3>Contato</h3><ul><li><a href="mailto:contato@ongesperanca.org.br">contato@ongesperanca.org.br</a></li><li>(00) 0000-0000</li><li>Segunda a sexta, das 8h às 17h</li></ul></div>
+</div>
+<p class="copy">© 2026 ONG Esperança. Todos os direitos reservados.</p>
+</div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

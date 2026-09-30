@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doações | ONG Esperança</title>
+<meta name="description" content="Central de doações da ONG Esperança: contribua com dinheiro, alimentos e itens.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header class="site"><div class="container bar">
+<a class="logo" href="index.html"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="9" fill="#f4b32a"/><path d="M20 3v6M20 31v6M3 20h6M31 20h6M8 8l4 4M28 28l4 4M32 8l-4 4M12 28l-4 4" stroke="#1f7fc1" stroke-width="3" stroke-linecap="round"/></svg>ONG Esperança</a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu"><span></span></button>
+<nav class="nav" id="nav" aria-label="Principal"><ul>
+<li><a href="index.html">Início</a></li>
+<li><a href="projetos.html">Projetos</a></li>
+<li><a href="doacoes.html" aria-current="page">Doações</a></li>
+<li class="has-drop"><button class="drop-btn" type="button" aria-expanded="false" aria-haspopup="true">Participe</button>
+<ul class="drop"><li><a href="cadastro.html">Seja voluntário</a></li><li><a href="doacoes.html#itens">Doe alimentos e itens</a></li><li><a href="#contato">Fale conosco</a></li></ul></li>
+<li><a class="nav-doar" href="doacoes.html">Doe agora</a></li>
+</ul></nav></div></header>
+<main id="conteudo">
+<section class="pagina-topo"><div class="container"><h1>Central de Doações</h1><p>A sua ajuda transforma. Escolha como contribuir: em dinheiro, agora mesmo, ou com itens entregues na nossa central.</p></div></section>
+<section class="secao"><div class="container duas">
+<div class="painel">
+<h2>Doação financeira</h2>
+<div id="alerta-doacao" class="alert" role="status" hidden></div>
+<fieldset style="border:0;padding:0;margin:0 0 1.5rem"><legend style="font-weight:800;margin-bottom:.5rem">Frequência</legend>
+<div class="valores">
+<div class="opcao"><input type="radio" id="f-unica" name="frequencia" value="única" checked><label for="f-unica">Única</label></div>
+<div class="opcao"><input type="radio" id="f-mensal" name="frequencia" value="mensal"><label for="f-mensal">Mensal</label></div>
+</div></fieldset>
+<fieldset style="border:0;padding:0;margin:0"><legend style="font-weight:800;margin-bottom:.5rem">Valor</legend>
+<div class="valores">
+<div class="opcao"><input type="radio" id="v30" name="valor" value="30"><label for="v30">R$ 30<small>Uma cesta de hortifrúti</small></label></div>
+<div class="opcao"><input type="radio" id="v60" name="valor" value="60" checked><label for="v60">R$ 60<small>Material escolar de uma criança</small></label></div>
+<div class="opcao"><input type="radio" id="v120" name="valor" value="120"><label for="v120">R$ 120<small>Uma cesta básica completa</small></label></div>
+<div class="opcao"><input type="radio" id="vo" name="valor" value="outro"><label for="vo">Outro valor</label></div>
+</div></fieldset>
+<div class="campo"><label for="valor-outro">Digite outro valor (R$)</label><input id="valor-outro" type="text" inputmode="decimal" placeholder="Ex.: 45,00" disabled></div>
+<p class="resumo" id="resumo" aria-live="polite"></p>
+<button class="btn btn-primario" id="doar" type="button">Confirmar doação</button>
+<div class="pix"><div><strong>Chave PIX</strong><br><code id="chave-pix">contato@ongesperanca.org.br</code></div><button class="btn btn-contorno" id="copiar-pix" type="button">Copiar chave PIX</button></div>
+</div>
+<div><img src="images/Gemini_Generated_Image_9p59839p59839p59%20(1).jpg" alt="Equipe da ONG Esperança organizando doações na Central de Doações" style="border-radius:var(--raio);margin-bottom:1.5rem" loading="lazy"><h3>Transparência</h3><p>Todo valor recebido é aplicado nos projetos da ONG, e os relatórios de uso ficam disponíveis a quem pedir pelo e-mail de contato.</p></div>
+</div></section>
+<section class="secao secao-clara" id="itens"><div class="container">
+<div class="cabeca"><h2>Doação de itens</h2><p>Entregue na Central de Doações, de segunda a sexta, das 8h às 17h. Confira o que mais precisamos.</p></div>
+<div class="grade">
+<div class="simples"><h3>Alimentos não perecíveis</h3><p>Arroz, feijão, óleo, macarrão, farinha e leite em pó, dentro do prazo de validade.</p><a class="btn btn-contorno" href="#contato">Combinar entrega</a></div>
+<div class="simples"><h3>Material escolar</h3><p>Cadernos, lápis, livros infantis e mochilas em bom estado para o reforço escolar.</p><a class="btn btn-contorno" href="#contato">Combinar entrega</a></div>
+<div class="simples"><h3>Roupas e cobertores</h3><p>Peças limpas e conservadas para todas as idades, com prioridade para agasalhos.</p><a class="btn btn-contorno" href="#contato">Combinar entrega</a></div>
+</div></div></section>
+</main>
+<footer class="rodape" id="contato"><div class="container">
+<div class="rodape-grade">
+<div><h3>ONG Esperança</h3><p>Alimento, educação e cuidado para famílias que vivem em comunidades urbanas. Nossa comunidade, nosso futuro.</p></div>
+<div><h3>Navegação</h3><ul><li><a href="index.html">Início</a></li><li><a href="projetos.html">Projetos</a></li><li><a href="doacoes.html">Doações</a></li><li><a href="cadastro.html">Cadastro</a></li></ul></div>
+<div><h3>Como ajudar</h3><ul><li><a href="doacoes.html">Doação em dinheiro</a></li><li><a href="doacoes.html#itens">Doação de itens</a></li><li><a href="cadastro.html">Voluntariado</a></li></ul></div>
+<div><h3>Contato</h3><ul><li><a href="mailto:contato@ongesperanca.org.br">contato@ongesperanca.org.br</a></li><li>(00) 0000-0000</li><li>Segunda a sexta, das 8h às 17h</li></ul></div>
+</div>
+<p class="copy">© 2026 ONG Esperança. Todos os direitos reservados.</p>
+</div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
